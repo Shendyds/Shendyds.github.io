@@ -19,6 +19,7 @@
 
 /* Root Font Size */
 :root {
+    --fs-32: 32px;
     --fs-24: 24px;
     --fs-20: 20px;
     --fs-18: 18px;
@@ -201,6 +202,80 @@ body::-webkit-scrollbar-button {
     overflow: hidden;
 }
 
+/* Menu Filter */
+.section-item.hide,
+.myskill.hide {
+    display: none;
+}
+
+.section-item,
+.myskill {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-item.show,
+.myskill.show {
+    display: block;
+}
+
+.main-content .menu-filter {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.main-content .menu-filter .menu-item {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 3rem;
+    background-color: #2e2e2e;
+    padding: 1.2rem 3rem;
+    font: 600 var(--fs-14) var(--font-poppins);
+    color: #ffffff;
+    text-transform: capitalize;
+    border-radius: 0 0 0 1rem;
+    border-left: 1px solid #3f3f3f;
+    border-bottom: 1px solid #3f3f3f;
+}
+
+.main-content .menu-filter .menu-item span {
+    cursor: pointer;
+}
+
+.main-content .menu-filter .menu-item span.active {
+    color: #efce6a;
+}
+
+/* Header */
+.main-content .section-item {
+    padding: 2rem;
+}
+
+.main-content .section-item .header {
+    position: relative;
+}
+
+.main-content .section-item .header::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #efce6a;
+    bottom: 0;
+    border-radius: 1rem;
+}
+
+.main-content .section-item .header h2 {
+    font: 700 var(--fs-32) var(--font-poppins);
+    text-transform: capitalize;
+    padding: 0 0 .6rem 0;
+    color: #ffffff;
+}
+
+/* End of Main Content */
+
 
 
 /* Responsive */
@@ -320,6 +395,29 @@ body::-webkit-scrollbar-button {
     }
 
     /* End of Sidebar Content */
+
+    /* Main Content */
+    .main-content {
+        grid-area: content;
+    }
+
+    .main-content .menu-filter {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    .main-content .menu-filter .menu-item {
+        width: 100vw;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    /* End of Main Content */
 }
 
 @media (max-width: 834px) {}
@@ -384,6 +482,16 @@ body::-webkit-scrollbar-button {
     }
 
     /* End of Sidebar Content */
+
+    /* Main Content */
+    .main-content .section-item .header h2 {
+        font: 700 var(--fs-24) var(--font-poppins);
+        text-transform: capitalize;
+        padding: 0 0 .6rem 0;
+        color: #ffffff;
+    }
+
+    /* End of Main Content */
 }
 
 @media (max-width: 414px) {}
