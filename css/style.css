@@ -352,7 +352,7 @@ body::-webkit-scrollbar-button {
 
     /* Sidebar Content */
     .sidebar-content.active {
-        height: 510px;
+        height: 515px;
         transition: all .5s ease-in-out;
         white-space: nowrap;
     }
@@ -424,7 +424,7 @@ body::-webkit-scrollbar-button {
             "sidebar sidebar sidebar"
             "content content content"
             "content content content";
-        row-gap: .8rem;
+        row-gap: 1rem;
         margin: 10px 3%;
     }
 
@@ -436,13 +436,6 @@ body::-webkit-scrollbar-button {
 
     /* Container */
     .container {
-        display: grid;
-        grid-template-columns: 200px 1fr;
-        grid-template-areas:
-            "sidebar sidebar sidebar"
-            "content content content"
-            "content content content";
-        row-gap: 1rem;
         margin: 10px 2%;
     }
 
