@@ -80,6 +80,13 @@ body {
 .sidebar-content .menu i {
     color: #efce6a;
     font-size: 1.2rem;
+    transition: all .5s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.sidebar-content.active .menu i {
+    transform: rotate(0deg);
+    transition: all .5s ease-in-out;
 }
 
 /* Profile */
@@ -315,7 +322,8 @@ body {
 
     /* Container */
     .container {
-        margin: 1.5rem 5%;
+        margin: 1.2rem 4%;
+        row-gap: 1rem;
     }
 
     /* Sidebar Content */
@@ -326,7 +334,7 @@ body {
     }
 
     .sidebar-content .profile .user img {
-        width: 100px;
+        width: 110px;
     }
 
     .sidebar-content .profile .name-tag h1 {
