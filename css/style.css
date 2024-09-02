@@ -347,12 +347,12 @@ body::-webkit-scrollbar-button {
     /* Container */
     .container {
         margin: 1.2rem 4%;
-        row-gap: .95rem;
+        row-gap: 1rem;
     }
 
     /* Sidebar Content */
     .sidebar-content.active {
-        height: 500px;
+        height: 510px;
         transition: all .5s ease-in-out;
         white-space: nowrap;
     }
