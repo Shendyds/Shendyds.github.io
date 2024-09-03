@@ -975,6 +975,7 @@ body::-webkit-scrollbar-button {
         gap: 1.9rem;
     }
 
+    /* Header */
     .main-content .section-item .header h2 {
         font: 700 var(--fs-24) var(--font-poppins);
         text-transform: capitalize;
@@ -982,6 +983,7 @@ body::-webkit-scrollbar-button {
         color: #ffffff;
     }
 
+    /* About */
     .main-content .section-item .article-about {
         display: grid;
         grid-template-columns: 200px 1fr;
@@ -1004,6 +1006,11 @@ body::-webkit-scrollbar-button {
         gap: 1rem;
         margin: 3rem 0;
         padding: 0 .8rem;
+    }
+
+    /* Testimonials */
+    .main-content .section-item .testimonials {
+        margin: 3rem 0 0 0;
     }
 
     /* End of Main Content */
