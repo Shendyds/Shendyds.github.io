@@ -740,13 +740,13 @@ body::-webkit-scrollbar-button {
 }
 
 .main-content .article-resume .timeline .timeline-list .timeline-item h4 {
-    font: 600 var(--fs-15) var(--font-poppins);
+    font: 600 var(--fs-16) var(--font-poppins);
     color: #ffffff;
     text-transform: capitalize;
 }
 
 .main-content .article-resume .timeline .timeline-list .timeline-item span {
-    font: var(--fs-13) var(--font-poppins);
+    font: var(--fs-14) var(--font-poppins);
     color: #efce6a;
     text-transform: capitalize;
 }
@@ -769,6 +769,13 @@ body::-webkit-scrollbar-button {
     color: #ffffff;
     font-style: italic;
 }
+
+.main-content .article-resume .timeline .timeline-list .timeline-item .jobdesc {
+    font: var(--fs-14) var(--font-poppins);
+    color: #afafaf;
+    line-height: 2;
+}
+
 
 /* End of Main Content */
 
