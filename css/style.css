@@ -617,8 +617,8 @@ body::-webkit-scrollbar-button {
 
 .main-content .section-item .testimonials .slider-wrapper .swiper-pagination-bullet {
     background-color: #EFCE6A;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
 }
 
 .main-content .section-item .testimonials .slider-wrapper .swiper-slide-button {
@@ -869,7 +869,7 @@ body::-webkit-scrollbar-button {
 
     /* Testimonials */
     .main-content .section-item .testimonials {
-        margin: 1rem 0 0 0;
+        margin: 3rem 0 0 0;
     }
 
     /* End of Main Content */
