@@ -417,6 +417,7 @@ body::-webkit-scrollbar-button {
         align-items: center;
         border-radius: 1rem 1rem 0 0;
         gap: 5rem;
+        backdrop-filter: blur(10px);
     }
 
     /* End of Main Content */
