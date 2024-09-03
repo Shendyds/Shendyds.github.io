@@ -44,27 +44,6 @@ valueDisplays.forEach((valueDisplays) => {
     }, duration);
 });
 
-// My Skills
-const skillList = document.querySelector('.skill-list');
-const mySkill = document.querySelectorAll('.myskill');
-
-skillList.addEventListener('click', (event) => {
-    if (event.target.classList.contains('skill-item')) {
-        skillList.querySelector('.active').classList.remove('active');
-        event.target.classList.add('active');
-        const filterValue = event.target.getAttribute('data-filter');
-        mySkill.forEach((item) => {
-            if (item.classList.contains(filterValue)) {
-                item.classList.remove('hide');
-                item.classList.add('show');
-            } else {
-                item.classList.remove('show');
-                item.classList.add('hide');
-            }
-        });
-    }
-});
-
 // Animasi teks
 // Menangkap event scroll
 window.addEventListener("scroll", muncul);

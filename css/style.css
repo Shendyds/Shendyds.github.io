@@ -263,7 +263,7 @@ body::-webkit-scrollbar-button {
     position: absolute;
     width: 40px;
     height: 5px;
-    background-color: #efce6a;
+    background: linear-gradient(to right, rgb(255, 219, 112), rgb(255, 187, 92));
     bottom: 0;
     border-radius: 1rem;
 }
@@ -472,117 +472,129 @@ body::-webkit-scrollbar-button {
     opacity: 1;
 }
 
-.main-content .section-item .article-myskill .skill-list {
-    margin: 3rem 0 0 0;
-}
-
-.main-content .section-item .article-myskill .skill-list .skill-item {
-    color: #7a7a7a;
-    font: 500 var(--fs-14) var(--font-poppins);
-    margin: 0 1rem 0 0;
-    padding: 5px 20px;
-    cursor: pointer;
-    text-transform: capitalize;
-    border-radius: 1rem;
-    border: 1px solid #EFCE6A;
-}
-
-.main-content .section-item .article-myskill .skill-list .skill-item.active {
-    background-color: #EFCE6A;
-    color: #000000;
-}
-
-.main-content .section-item .article-myskill .elemen span {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all .7s ease-in-out;
-}
-
-.main-content .section-item .article-myskill .tampil span {
-    position: relative;
-    transform: translateY(0px);
-    opacity: 1;
-}
-
 .main-content .section-item .article-myskill .myskill {
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
+    padding: 5px;
 }
 
 .main-content .section-item .article-myskill .myskill .tech {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    background-color: rgba(85, 85, 85, 0.2);
+    box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.23) inset,
+        1px 1px 1px 0px rgb(0, 0, 0);
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 10px;
 }
 
-.main-content .section-item .article-myskill .myskill .elemen figure {
+.main-content .section-item .article-myskill .elemen .tech {
     position: relative;
     transform: translateY(50px);
     opacity: 0;
     transition: all .7s ease-in-out;
 }
 
-.main-content .section-item .article-myskill .myskill .tampil figure {
+.main-content .section-item .article-myskill .tampil .tech {
     position: relative;
     transform: translateY(0px);
     opacity: 1;
 }
 
-.main-content .section-item .article-myskill .myskill .tech .figure-tech img {
-    width: 60px;
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card {
+    margin: 0 0 1.5rem 0;
 }
 
-.main-content .section-item .article-myskill .myskill .tech .figure-tech {
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card h3 {
+    font: 600 var(--fs-15) var(--font-poppins);
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress {
+    width: 100%;
+    background-color: #3f3f3f;
+    border-radius: 1rem;
+}
+
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .progress-bar {
+    font: 600 var(--fs-15) var(--font-hindsiliguri);
+    height: 15px;
+    color: #3f3f3f;
+}
+
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .html {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    background-color: rgba(85, 85, 85, 0.2);
-    box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.23) inset,
-        1px 1px 1px 0px rgb(0, 0, 0);
-    padding: 1rem;
-    border-radius: 10px;
-    position: relative;
+    justify-content: center;
+    width: 90%;
+    background: linear-gradient(to right, rgb(255, 219, 112), rgb(255, 187, 92));
+    border-radius: 1rem;
 }
 
-.main-content .section-item .article-myskill .myskill .tech .figure-tech h3 {
-    color: #ffffff;
-    font: 600 var(--fs-16) var(--font-poppins);
-    transition: all .3s ease-in-out;
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .css {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background: linear-gradient(to right, rgb(255, 219, 112), rgb(255, 187, 92));
+    border-radius: 1rem;
 }
 
-.main-content .section-item .article-myskill .myskill .tech .figure-tech:hover h3 {
-    transform: translateY(-10px);
-    transition: all .3s ease-in-out;
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .js {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    background: linear-gradient(to right, rgb(255, 219, 112), rgb(255, 187, 92));
+    border-radius: 1rem;
 }
 
-.main-content .section-item .article-myskill .myskill .tech .beginner::before {
-    content: "Beginner";
-    position: absolute;
-    color: #EFCE6A;
-    top: 50px;
-    left: 5.8rem;
-    font: 500 var(--fs-14) var(--font-poppins);
-    opacity: 0;
-    transition: all .3s ease-in-out;
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .php {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: linear-gradient(to right, rgb(255, 219, 112), rgb(255, 187, 92));
+    border-radius: 1rem;
 }
 
-.main-content .section-item .article-myskill .myskill .tech .advanced::before {
-    content: "Advanced";
-    position: absolute;
-    color: #EFCE6A;
-    top: 50px;
-    left: 5.8rem;
-    font: 500 var(--fs-14) var(--font-poppins);
-    opacity: 0;
-    transition: all .3s ease-in-out;
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .git {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    background: linear-gradient(to right, rgb(255, 219, 112), rgb(255, 187, 92));
+    border-radius: 1rem;
 }
 
-.main-content .section-item .article-myskill .myskill .tech .figure-tech:hover.beginner::before,
-.main-content .section-item .article-myskill .myskill .tech .figure-tech:hover.advanced::before {
-    opacity: 1;
-    transition: all .3s ease-in-out;
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    background: linear-gradient(to right, rgb(255, 219, 112), rgb(255, 187, 92));
+    border-radius: 1rem;
 }
+
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .netbeans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    background: linear-gradient(to right, rgb(255, 219, 112), rgb(255, 187, 92));
+    border-radius: 1rem;
+}
+
+.main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .figma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background: linear-gradient(to right, rgb(255, 219, 112), rgb(255, 187, 92));
+    border-radius: 1rem;
+}
+
 
 /* Testimonials */
 .main-content .section-item .testimonials {
@@ -1099,6 +1111,14 @@ body::-webkit-scrollbar-button {
         gap: 1rem;
         margin: 3rem 0;
         padding: 0 .8rem;
+    }
+
+    /* My Skills */
+    .main-content .section-item .article-myskill .myskill .tech {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0;
+        padding: 2rem 2rem 1rem 2rem;
     }
 
     /* Testimonials */
