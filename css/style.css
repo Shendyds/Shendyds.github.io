@@ -399,6 +399,7 @@ body::-webkit-scrollbar-button {
     /* Main Content */
     .main-content {
         grid-area: content;
+        margin: 0 0 3.5rem 0;
     }
 
     .main-content .menu-filter {
@@ -415,6 +416,7 @@ body::-webkit-scrollbar-button {
         justify-content: center;
         align-items: center;
         border-radius: 1rem 1rem 0 0;
+        gap: 1.5rem;
     }
 
     /* End of Main Content */
@@ -484,6 +486,10 @@ body::-webkit-scrollbar-button {
     /* End of Sidebar Content */
 
     /* Main Content */
+    .main-content {
+        margin: 0 0 4.1rem 0;
+    }
+
     .main-content .section-item .header h2 {
         font: 700 var(--fs-24) var(--font-poppins);
         text-transform: capitalize;
@@ -538,6 +544,13 @@ body::-webkit-scrollbar-button {
 
     /* Sidebar Content */
     /* End of Sidebar Content */
+
+    /* Main Content */
+    .main-content {
+        margin: 0 0 4.5rem 0;
+    }
+
+    /* End of Main Content */
 }
 
 @media (max-width: 320px) {
