@@ -478,7 +478,7 @@ body::-webkit-scrollbar-button {
 
 .main-content .section-item .article-myskill .skill-list .skill-item {
     color: #7a7a7a;
-    font: 500 .9rem var(--font-poppins);
+    font: 500 var(--fs-14) var(--font-poppins);
     margin: 0 1rem 0 0;
     padding: 5px 20px;
     cursor: pointer;
@@ -591,7 +591,7 @@ body::-webkit-scrollbar-button {
 
 .main-content .section-item .testimonials .title-testimoni h2 {
     color: #ffffff;
-    font: 700 1.5rem var(--font-poppins);
+    font: 700 var(--fs-24) var(--font-poppins);
     text-transform: capitalize;
 }
 
@@ -681,7 +681,93 @@ body::-webkit-scrollbar-button {
     right: 20px;
     color: #EFCE6A;
     font-size: 3rem;
+}
 
+/* Article Resume */
+.main-content .article-resume {
+    margin: 3rem 0 0 0;
+}
+
+.main-content .article-resume .timeline {
+    margin: 0 0 4rem 0;
+}
+
+.main-content .article-resume .timeline .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main-content .article-resume .timeline .title-wrapper .icon-wrapper i {
+    color: #efce6a;
+    background-color: #1e1e1f;
+    box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.23) inset,
+        1px 1px 1px 0px rgb(0, 0, 0);
+    padding: 11px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.main-content .article-resume .timeline .title-wrapper h3 {
+    font: 600 var(--fs-20) var(--font-poppins);
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.main-content .article-resume .timeline .timeline-list {
+    border-left: 1px solid #3f3f3f;
+    margin: 0 0 0 1.3rem;
+    padding: 2rem 0 0 2.7rem;
+    position: relative;
+}
+
+.main-content .article-resume .timeline .timeline-list::before {
+    content: "";
+    position: absolute;
+    background-color: #efce6a;
+    width: 9px;
+    height: 9px;
+    left: -4.5px;
+    top: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 5px #3f3f3f;
+}
+
+.main-content .article-resume .timeline .timeline-list .timeline-item {
+    line-height: 2;
+}
+
+.main-content .article-resume .timeline .timeline-list .timeline-item h4 {
+    font: 600 var(--fs-15) var(--font-poppins);
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.main-content .article-resume .timeline .timeline-list .timeline-item span {
+    font: var(--fs-13) var(--font-poppins);
+    color: #efce6a;
+    text-transform: capitalize;
+}
+
+.main-content .article-resume .timeline .timeline-list .timeline-item h5 {
+    font: var(--fs-14) var(--font-poppins);
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.main-content .article-resume .timeline .timeline-list .timeline-item h6 {
+    font: var(--fs-14) var(--font-poppins);
+    color: #ffffff;
+    text-transform: capitalize;
+    line-height: 3;
+}
+
+.main-content .article-resume .timeline .timeline-list .timeline-item p {
+    font: var(--fs-14) var(--font-poppins);
+    color: #ffffff;
+    font-style: italic;
 }
 
 /* End of Main Content */
