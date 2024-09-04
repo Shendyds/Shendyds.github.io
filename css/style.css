@@ -234,7 +234,7 @@ body::-webkit-scrollbar-button {
     background-color: #2e2e2e;
     padding: 1.2rem 3rem;
     font: 600 var(--fs-14) var(--font-poppins);
-    color: #ffffff;
+    color: #afafaf;
     text-transform: capitalize;
     border-radius: 0 0 0 1rem;
     border-left: 1px solid #3f3f3f;
@@ -246,6 +246,14 @@ body::-webkit-scrollbar-button {
 }
 
 .main-content .menu-filter .menu-item span.active {
+    color: #efce6a;
+}
+
+.main-content .menu-filter .menu-item span:hover {
+    color: #ffffff;
+}
+
+.main-content .menu-filter .menu-item span.active:hover {
     color: #efce6a;
 }
 
