@@ -481,11 +481,6 @@ body::-webkit-scrollbar-button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3rem;
-    background-color: rgba(85, 85, 85, 0.2);
-    box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.23) inset,
-        1px 1px 1px 0px rgb(0, 0, 0);
-    padding: 2rem 2rem 1rem 2rem;
-    border-radius: 10px;
 }
 
 .main-content .section-item .article-myskill .elemen .tech {
@@ -518,7 +513,7 @@ body::-webkit-scrollbar-button {
 }
 
 .main-content .section-item .article-myskill .myskill .tech .skill .skill-card .skill-progress .progress-bar {
-    font: 600 var(--fs-15) var(--font-hindsiliguri);
+    font: 600 var(--fs-13) var(--font-hindsiliguri);
     height: 15px;
     color: #3f3f3f;
 }
@@ -788,6 +783,135 @@ body::-webkit-scrollbar-button {
     line-height: 2;
 }
 
+/* Portfolio */
+
+
+/* Contact */
+.main-content .section-item .maps {
+    margin: 4rem 0 0 0;
+}
+
+.main-content .section-item .maps iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 1rem;
+    border: none;
+    filter: grayscale(1) invert(1);
+}
+
+.main-content .section-item .my-contact {
+    margin: 2rem 0 0 0;
+}
+
+.main-content .section-item .my-contact h3 {
+    font: 700 var(--fs-20) var(--font-poppins);
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.main-content .section-item .my-contact p {
+    font: var(--fs-14) var(--font-poppins);
+    color: #afafaf;
+    line-height: 2;
+}
+
+.main-content .section-item .contact-form {
+    margin: 1.5rem 0 1rem 0;
+}
+
+.main-content .section-item .contact-form .input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.main-content .section-item .contact-form .input-wrapper input {
+    height: 50px;
+    padding: 1rem;
+    font: var(--fs-14) var(--font-poppins);
+    outline: none;
+    background: none;
+    border: 1px solid #383838;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.main-content .section-item .contact-form .input-wrapper input:focus {
+    border: 1px solid #EFCE6A;
+}
+
+.main-content .section-item .contact-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    margin: 1.5rem 0 0 0;
+    font: .9rem var(--font-poppins);
+    outline: none;
+    background: none;
+    border: 1px solid #383838;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.main-content .section-item .contact-form textarea:focus {
+    border: 1px solid #EFCE6A;
+}
+
+.main-content .section-item .contact-form .button-wrapper {
+    margin: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+}
+
+.main-content .section-item .contact-form .button-wrapper button {
+    width: 200px;
+    height: 50px;
+    background-color: #1E1E1F;
+    box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.23) inset,
+        1px 1px 1px 0px rgb(0, 0, 0);
+    color: #EFCE6A;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-content .section-item .contact-form .button-wrapper button i {
+    font-size: 1.1rem;
+}
+
+.main-content .section-item .contact-form .button-wrapper button span {
+    font: var(--fs-14) var(--font-poppins);
+    margin: 0 0 0 10px;
+    text-transform: capitalize;
+}
+
+.main-content .section-item .contact-form .socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-content .section-item .contact-form .socialmedia h3 {
+    color: #525252;
+    font: var(--fs-14) var(--font-poppins);
+    text-transform: capitalize;
+}
+
+.main-content .section-item .contact-form .socialmedia a {
+    color: #525252;
+}
+
+.main-content .section-item .contact-form .socialmedia a:hover i {
+    color: #EFCE6A;
+    transition: all .2s ease-in-out;
+}
+
+.main-content .section-item .contact-form .socialmedia i {
+    color: #525252;
+    font-size: 1.1rem;
+}
 
 /* End of Main Content */
 
@@ -1125,6 +1249,41 @@ body::-webkit-scrollbar-button {
     .main-content .section-item .testimonials {
         margin: 3rem 0 0 0;
     }
+
+    /* Portfolio */
+
+    /* Contact */
+    .main-content .section-item .contact-form .input-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .main-content .section-item .contact-form .button-wrapper {
+        margin: 2rem 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: center;
+    }
+
+    .main-content .section-item .contact-form .button-wrapper button {
+        width: 100%;
+    }
+
+    .main-content .section-item .contact-form .socialmedia {
+        display: inline-block;
+        text-align: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .main-content .section-item .contact-form .socialmedia h3 {
+        margin: 0 0 1rem 0;
+    }
+
+    .main-content .section-item .contact-form .socialmedia a {
+        margin: 0 10px;
+    }
+
 
     /* End of Main Content */
 }
