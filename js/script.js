@@ -44,37 +44,6 @@ valueDisplays.forEach((valueDisplays) => {
     }, duration);
 });
 
-// Animasi teks
-// Menangkap event scroll
-window.addEventListener("scroll", muncul);
-
-// Fungsi untuk memberikan efek elemen muncul ketika di scroll
-function muncul() {
-    // Menangkap setiap tag dengan class elemen
-    let elements = document.querySelectorAll(".elemen");
-
-    // Perulangan untuk setiap tag dengan class elemen
-    for (let i = 0; i < elements.length; i++) {
-        // Mengambil ukuran tinggi layar
-        let tinggiLayar = window.innerHeight;
-
-        // Menangkap ukuran elemen dan posisinya relatif terhadap viewpoer
-        let jarakAtasElemen = elements[i].getBoundingClientRect().top;
-
-        // Menentukan ukuran scroll untuk memunculkan elemen
-        let ukuranScroll = 50;
-
-        // Jika jarak atas elemen kurang dari tinggi layar dikurangi ukuran scroll maka tambahkan class tampil di setiap tag dengan class elemen
-        if (jarakAtasElemen < tinggiLayar - ukuranScroll) {
-            elements[i].classList.add("tampil");
-        }
-        // Jika tida maka hapus class tampil
-        else {
-            elements[i].classList.remove("tampil");
-        }
-    }
-}
-
 // Swiper
 const swiper = new Swiper('.slider-wrapper', {
     loop: true,

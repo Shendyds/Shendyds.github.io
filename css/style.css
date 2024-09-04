@@ -467,19 +467,6 @@ body::-webkit-scrollbar-button {
     text-transform: capitalize;
 }
 
-.main-content .section-item .article-myskill .elemen h2 {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
-
-.main-content .section-item .article-myskill .tampil h2 {
-    position: relative;
-    transform: translateY(0px);
-    opacity: 1;
-}
-
 .main-content .section-item .article-myskill .myskill {
     margin: 3rem 0 0 0;
     padding: 5px;
@@ -489,19 +476,6 @@ body::-webkit-scrollbar-button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3rem;
-}
-
-.main-content .section-item .article-myskill .elemen .tech {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
-
-.main-content .section-item .article-myskill .tampil .tech {
-    position: relative;
-    transform: translateY(0px);
-    opacity: 1;
 }
 
 .main-content .section-item .article-myskill .myskill .tech .skill .skill-card {
@@ -610,19 +584,6 @@ body::-webkit-scrollbar-button {
     text-transform: capitalize;
 }
 
-.main-content .section-item .testimonials .elemen h2 {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
-
-.main-content .section-item .testimonials .tampil h2 {
-    position: relative;
-    transform: translateY(0px);
-    opacity: 1;
-}
-
 .main-content .section-item .testimonials .slider-wrapper {
     margin: 0 5px 50px 5px;
     max-width: 1200px;
@@ -639,19 +600,6 @@ body::-webkit-scrollbar-button {
 .main-content .section-item .testimonials .slider-wrapper .swiper-slide-button {
     display: none;
     transition: all .2s ease-in-out;
-}
-
-.main-content .section-item .testimonials .slider-wrapper .elemen .card-item {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
-
-.main-content .section-item .testimonials .slider-wrapper .tampil .card-item {
-    position: relative;
-    transform: translateY(0px);
-    opacity: 1;
 }
 
 .main-content .section-item .testimonials .slider-wrapper .card-list .card-item {
@@ -704,7 +652,7 @@ body::-webkit-scrollbar-button {
 }
 
 .main-content .article-resume .timeline {
-    margin: 0 0 5rem 0;
+    margin: 0 0 4rem 0;
 }
 
 .main-content .article-resume .experiences {
@@ -733,19 +681,6 @@ body::-webkit-scrollbar-button {
     font: 600 var(--fs-20) var(--font-poppins);
     color: #ffffff;
     text-transform: capitalize;
-}
-
-.main-content .article-resume .elemen {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
-
-.main-content .article-resume .tampil {
-    position: relative;
-    transform: translateY(0px);
-    opacity: 1;
 }
 
 .main-content .article-resume .timeline .timeline-list {
@@ -840,27 +775,6 @@ body::-webkit-scrollbar-button {
     line-height: 2;
 }
 
-.main-content .section-item .elemen .contactform {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
-
-.main-content .section-item .elemen .contactext {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 1.5s ease-in-out;
-}
-
-.main-content .section-item .tampil .contactform,
-.main-content .section-item .tampil .contactext {
-    position: relative;
-    transform: translateY(0px);
-    opacity: 1;
-}
-
 .main-content .section-item .contact-form {
     margin: 1.5rem 0 1rem 0;
 }
@@ -869,21 +783,6 @@ body::-webkit-scrollbar-button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3rem;
-}
-
-.main-content .section-item .elemen .input-wrapper,
-.main-content .section-item .elemen .textarea {
-    position: relative;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
-
-.main-content .section-item .tampil .input-wrapper,
-.main-content .section-item .tampil .textarea {
-    position: relative;
-    transform: translateY(0px);
-    opacity: 1;
 }
 
 .main-content .section-item .contact-form .input-wrapper input {
